@@ -32,7 +32,7 @@ public class PlayersController {
         return dao.getPlayerById(id);
     }
 
-    @PostMapping
+    @PostMapping("/add_player")
     public void createFootballPlayer(@RequestBody FootballPlayer footballPlayer){
         dao.addPlayer(footballPlayer);
     }
